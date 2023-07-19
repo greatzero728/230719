@@ -1,0 +1,7 @@
+You have got n identical plastic cups that have been designed so that the difference in centimeters between the edge where the water ends in the cup and the bottom of the cup is equal to the number of milliliters of water it contains.
+You have put the glasses in a row and connected the i_th glass with the i+1_th glass through a horizontal straw. (1 ≤ i < n)
+If you have poured x milliliters of water into the first glass, how much water will be in the j_th glass when it stops flowing?
+Once the list of heights of horizontal straw is read, you will receive q queries.
+Before you start reading them, you will receive an integer F, which will be equal to 1 or 2.
+If F = 1, you will receive q queries in the format (x, j), where x and j represent the explanation above.
+If F = 2, you will receive q queries with the format (x + C, j), where in the first query C = 0, but in the following C will be equal to the result of the previous query. If F = 2, you should answer the queries with the original value of x, not with x + C.

@@ -1,0 +1,9 @@
+There is an electrical network system that contains n nodes and m wires. (1 ≤ n, m ≤ 100000) Node 1 is a source node, and node n is a sink node.
+An electrical network is correct if it can be constructed using the following rules:
+1. The basic network has a source node and a sink node connected by a single wire. This is correct network.
+2. If there are two correct networks A and B, then the network S(A, B), created by joining the sink node of A and the source node of B, is correct.
+3. If there are two correct networks A and B, then the network P (A, B), created by joining the source node of A with the source node of B and the sink node of A with the sink node of B is correct.
+4. Every correct network can be created from basic networks using a finite number of the two previous rules.
+You have to count the number of ways to remove some wires from the network so that the remaining wires form a tree.
+Your answer could be very big, so find its reminder modulo 998244353.
+Note, that correct networks can have several wires between a pair of nodes.

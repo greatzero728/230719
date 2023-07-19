@@ -1,0 +1,4 @@
+Before answering any query, you can simulate how the glasses are filled, keeping for each tube how much water has to be poured to reach it from the left v_1 and how much has to be poured to reach it from the right v_2. This simulation can be done using a stack.
+Make a sparse table or segment tree of the function max with the indices of v_2.
+For each query, use the segment tree to see the tube closest to the left to the current vessel that hasn't reached the right yet, and the same to the right.
+Knowing this, you can respond to the query.

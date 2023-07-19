@@ -1,0 +1,9 @@
+First, you can iterate ymn and ymx in time complexity O(m^2).
+If you fix ymn and ymx, then you have to determine if there are xmn and xmx that satisfy the following equation.
+a_xmn_ymn + a_xmn_ymx + a_xmx_ymn + a_xmx_ymx = S.
+Here, you can think of this equation as the following:
+(a_xmn_ymn + a_xmn_ymx) + (a_xmx_ymn + a_xmx_ymx) = S.
+So, if you think of an array b_i = a_i_ymn + a_i_ymx, then the above equation will be transmitted as follows:
+b_xmn + b_xmx = S.
+You can solve this simple task in the time complexity O(n).
+So, total time complexity is O(n * m^2).
